@@ -5,10 +5,11 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJX4zgr-4xJaSuRQ9SQCTzkSfcXQYky58&sensor=true"> </script>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="container_16">
+		<%= yield %>
+	</div>
 </body>
 </html>

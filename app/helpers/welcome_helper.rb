@@ -8,9 +8,10 @@ module WelcomeHelper
   def works
     return{
               "Github" => 'http://github.com/andreij6', 
-              "Lynda Certificates" => 'http://www.lynda.com/AllCertificates/User/1778196',
+              "Lynda.com" => 'http://www.lynda.com/AllCertificates/User/1778196',
               "Ruby Monk" => 'https://rubymonk.com/u/andre-jones',
               "Code Academy" => 'http://www.codecademy.com/andreij6',
+              "Team Treehouse" => 'http://teamtreehouse.com/andrejones'
          }
     end
     

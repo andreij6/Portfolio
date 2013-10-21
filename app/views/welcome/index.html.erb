@@ -1,18 +1,103 @@
-<h1>Andre' I. Jones</h1>
-<p>E<span> andreij6@gmail.com</span></p>
-<h2>Experience</h2>
-	<p>Southwest Arkansas Planning and Development District</p>
-<h2>Education</h2>
-	<p>University of Arkansas</p>
-	<p>Bachelors in Geography</p>
-<h2>Works/Online Learning</h2>
-	<% works.each do |key,value|%>
-		<li><%= link_to key, value%></li>
-	<% end %>
-<h2>Skills</h2>
-	<ul>
-		<% skills.each do |skill|%>
-			<li><%= skill %></li>
-		<% end %>
-	</ul>
-<%= ham %>
+<section class="grid_16 push_2">
+	<header>
+		<h1>
+			Andre' I. Jones
+		</h1>
+		<h2 class="push_6">Web Developer  |  GIS Tech</h2>
+		
+	</header>
+</section>
+</div>
+<div id="map-canvas">
+	
+</div>
+<div class="container_16">
+	<div class="grid_8">
+		
+		<article>
+			
+		<h1>Experience</h1>
+			
+			<h2>Southwest Arkansas Planning and Development District</h2>
+			<p>At SWAPDD I hold the GIS Coordinator position where I am responsible for creating and maintaining GIS related products for our office and clients.</p>
+			
+		</article>
+		
+		<article>
+			
+		<h1>Works/Online Learning</h1>
+		
+			<ul class="double">
+			<% works.each do |key,value|%>
+			
+				<li><%= link_to key, value%></li>
+				
+			<% end %>
+			</ul>
+			
+		</article>
+	
+	</div>
+	
+	<div class="grid_8" id="secondColumn">
+	
+		<article>
+			
+		<h1>Education</h1>
+		
+			<h2>University of Arkansas</h2>
+			
+			<p>Bachelors in Geography</p>
+			
+		</article>
+		
+		
+		<article>
+			
+		<h1>Skills</h1>
+		
+			<ul class="double">
+				
+				<% skills.each do |skill|%>
+					
+					<li class=""><%= skill %></li>
+					
+				<% end %>
+				
+			</ul>
+			
+		</article>
+	
+	</div>
+
+
+<footer>
+	<p class="push_6">E:<span class="push_1">andreij6@gmail.com</span></p>
+</footer>
+</div>
+<script type="text/javascript"> //Map
+
+      function initialize() {
+        var myLatlng = new google.maps.LatLng(33.2742, -93.2336);
+       
+        var mapOptions = {
+          center: myLatlng,
+          zoom: 11,
+          zoomControl:false,
+          mapTypeControl:false,
+          streetViewControl:false,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+            
+        var marker = new google.maps.Marker({
+		    position: myLatlng,
+		    title:"Where I currently reside."
+		});
+            
+         marker.setMap(map);
+      }
+      
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>

@@ -1,3 +1,84 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+header h1 {
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 6em;
+  color: #444;
+}
+
+header h2 {
+  font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-size: 1.5em;
+  color: #555;
+}
+article {
+  height: 275px;
+}
+article h1 {
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  font-size: 2em;
+  color: #444;
+  
+}
+
+article h2 {
+  font-family: "Lucida Bright", Georgia, serif;
+  font-size: 1.5em;
+  color: #666;
+}
+
+article p {
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+ul{
+    margin-bottom:20px;
+    overflow:hidden;
+    list-style-type: none;
+    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+}
+
+li{
+  line-height:1.5em;
+  float:left;
+  display:inline;
+}
+
+.double li  { 
+  width:50%;
+}
+
+
+#map-canvas { 
+  border: 5px, 0, 0, 0;
+  border-bottom-style:solid;
+  border-bottom-color:#222;
+  height: 275px;
+}
+
+#secondColumn article {
+  height: 275px;
+  border: 0, 0, 0, 5px;
+  border-left-style:solid;
+  border-left-color:#222;
+  padding-left: 20px;
+}
+
+a {
+  color: #444;
+  text-decoration:none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: blue;
+}
+
+footer p {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  font-size: 1.5em;
+  color: #555;
+}
+
