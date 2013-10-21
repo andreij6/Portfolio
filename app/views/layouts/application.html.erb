@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
   <title>Portfolio</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Tangerine|Stoke' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJX4zgr-4xJaSuRQ9SQCTzkSfcXQYky58&sensor=true"> </script>
 </head>
 <body>
+	<div id="topPage">
 	<div class="container_16">
 		<%= yield %>
 	</div>

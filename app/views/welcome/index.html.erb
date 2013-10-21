@@ -1,60 +1,23 @@
 <section class="grid_16 push_2">
 	<header>
 		<h1>
-			Andre' I. Jones
+			Andre' Jones
 		</h1>
+		
 		<h2 class="push_6">Web Developer  |  GIS Tech</h2>
 		
 	</header>
 </section>
-</div>
+</div>	<!-- Closes topPage -->
+</div>	<!-- Closes container -->
 <div id="map-canvas">
 	
 </div>
-<div class="container_16">
-	<div class="grid_8">
-		
-		<article>
-			
-		<h1>Experience</h1>
-			
-			<h2>Southwest Arkansas Planning and Development District</h2>
-			<p>At SWAPDD I hold the GIS Coordinator position where I am responsible for creating and maintaining GIS related products for our office and clients.</p>
-			
-		</article>
-		
-		<article>
-			
-		<h1>Works/Online Learning</h1>
-		
-			<ul class="double">
-			<% works.each do |key,value|%>
-			
-				<li><%= link_to key, value%></li>
-				
-			<% end %>
-			</ul>
-			
-		</article>
-	
-	</div>
-	
-	<div class="grid_8" id="secondColumn">
+<div class="container_16" id="bottomContain">
 	
 		<article>
 			
-		<h1>Education</h1>
-		
-			<h2>University of Arkansas</h2>
-			
-			<p>Bachelors in Geography</p>
-			
-		</article>
-		
-		
-		<article>
-			
-		<h1>Skills</h1>
+		<h1>Skills</h1><hr />
 		
 			<ul class="double">
 				
@@ -67,14 +30,54 @@
 			</ul>
 			
 		</article>
+		<article>
+			
+		<h1>Works/Online Learning</h1><hr />
+		
+			<ul class="double">
+			<% works.each do |key,value|%>
+			
+				<li><%= link_to key, value%></li>
+				
+			<% end %>
+			</ul>
+			
+		</article>
 	
-	</div>
+	
+	
+		<article>
+			
+		<h1>Education</h1><hr />
+		
+			<h2>University of Arkansas</h2>
+			
+			<p>Bachelors in Geography</p>
+			
+		</article>
+		
+		<article>
+			
+		<h1>Experience</h1><hr />
+			
+			<h2>Southwest Arkansas Planning and Development District</h2>
+			<h4>July 2012 - Present</h4>
+			<p class="grid_8">At SWAPDD I hold the GIS 
+				Coordinator position where I am responsible for 
+				creating and maintaining GIS related products for 
+				our office and clients.</p>
+			
+		</article>
+	
 
-
-<footer>
-	<p class="push_6">E:<span class="push_1">andreij6@gmail.com</span></p>
-</footer>
 </div>
+<footer>
+	
+	<p class="container_16">Andre' I. Jones  <br>
+		Copyright &copy; <%= Time.now.strftime('%Y') %> <br>
+		Email:<span class="push_1">andreij6@gmail.com</span></p>
+</footer>
+
 <script type="text/javascript"> //Map
 
       function initialize() {

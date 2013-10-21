@@ -3,8 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 header h1 {
-  font-family: "Lucida Bright", Georgia, serif;
-  font-size: 6em;
+  font-family: 'Tangerine', cursive;
+  font-size: 9em;
   color: #444;
 }
 
@@ -37,7 +37,7 @@ ul{
     margin-bottom:20px;
     overflow:hidden;
     list-style-type: none;
-    font-family: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif;
+    font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 li{
@@ -51,18 +51,15 @@ li{
 }
 
 
-#map-canvas { 
-  border: 5px, 0, 0, 0;
-  border-bottom-style:solid;
-  border-bottom-color:#222;
-  height: 275px;
+#map-canvas {
+  -moz-box-shadow:    0px 10px 20px 0px #000;
+  -webkit-box-shadow: 0px 10px 20px 0px #000;
+  box-shadow:         0px 10px 20px 0px #000;
+  height: 300px;
 }
 
 #secondColumn article {
   height: 275px;
-  border: 0, 0, 0, 5px;
-  border-left-style:solid;
-  border-left-color:#222;
   padding-left: 20px;
 }
 
@@ -75,10 +72,19 @@ a {
 a:hover {
   color: blue;
 }
-
+footer {
+  padding: 15px;
+  background-color: lightgrey;
+  width: 100%;
+}
 footer p {
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   font-size: 1.5em;
   color: #555;
 }
+
+#topPage {
+  background-color: #111;
+}
+
 
